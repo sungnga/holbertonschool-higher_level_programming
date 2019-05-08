@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def no_c(my_string):
     new_str = ''
     if my_string:
