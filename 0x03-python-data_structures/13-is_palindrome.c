@@ -6,6 +6,8 @@ listint_t *reverse_listint(listint_t **head);
  * is_palindrome - checks if a singly linked list is a palindrome
  * @head: a pointer to the address of linked list
  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
+ *
+ * Tim helped with this task
  */
 int is_palindrome(listint_t **head)
 {
