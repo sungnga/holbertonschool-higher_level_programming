@@ -10,7 +10,3 @@ def magic_calculation(a, b):
         except:
             result = b + a
     return result
-
-import dis
-
-print(dis.dis(magic_calculation))
