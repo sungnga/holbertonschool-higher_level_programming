@@ -45,7 +45,7 @@ class Square:
 
     def my_print(self):
         """Prints in stdout the square with the character #"""
-        if self.__size != 0:
+        if self.__size > 0:
             for i in range(self.__position[1]):
                 print()
             for row in range(self.__size):
@@ -54,5 +54,5 @@ class Square:
                 for col in range(self.__size):
                     print("#", end="")
                 print()
-        else:
-            print("")
+        elif self.__size == 0:
+            print()
