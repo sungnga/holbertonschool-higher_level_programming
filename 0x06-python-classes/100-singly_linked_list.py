@@ -39,8 +39,9 @@ class SinglyLinkedList:
 
     def __init__(self):
         """Initialize class"""
-        self.__head
+        self.__head = 0
 
     def sorted_insert(self, value):
         """Inserts a new Node into the correct sorted position in the list
         (increasing order)"""
+        self.__sorted_insert = value
