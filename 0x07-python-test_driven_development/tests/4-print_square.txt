@@ -1,0 +1,9 @@
+The "4-print_square" module
+==========================
+
+Using "print_square"
+-------------------
+
+Import file:
+>>> say_my_name = __import__('4-print_square').print_square
+
