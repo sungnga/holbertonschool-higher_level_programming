@@ -7,6 +7,7 @@
     matrix_divided
 """
 
+
 def matrix_divided(matrix, div):
     """
     Returns a new matrix with the result by dividing all elements of a matrix.
