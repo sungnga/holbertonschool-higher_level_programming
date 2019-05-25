@@ -1,0 +1,48 @@
+The "0-add_integer" module
+==========================
+
+Using "add_integer"
+-------------------
+
+Import file:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Test with two numbers:
+>>> add_integer(1, 2)
+3
+
+Test with two negative numbers:
+>>> add_integer(-100, -2)
+-102
+
+Test with only one argument:
+>>> add_integer(2)
+100
+
+Test with a float and negative number:
+>>> add_integer(100.3, -2)
+98
+
+Test with two floats:
+>>> add_integer(23.7, 2.33)
+25
+
+Test with a string as second argument:
+>>> add_integer(4, 'School')
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+Test with a list as first argument:
+>>> add_integer([1, 2, 3], 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Test with a string as first argument:
+>>> add_integer("hello")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Test with infinite number:
+>>> add_integer(int('inf'))
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'inf'
