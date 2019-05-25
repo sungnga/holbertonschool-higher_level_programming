@@ -1,0 +1,8 @@
+The "5-text_indentation" module
+==========================
+
+Using "text_indentation"
+-------------------
+
+Import file:
+>>> say_my_name = __import__('5-text_indentation').text_indentation
