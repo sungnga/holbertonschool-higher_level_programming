@@ -43,6 +43,6 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 Test with infinite number:
->>> add_integer(int('inf'))
+>>> add_integer(float('inf'))
 Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'inf'
