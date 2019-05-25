@@ -2,8 +2,8 @@
 
 
 """
-    This module prints 'My name is <first name> <last name>' using the following
-    methods:
+    This module prints 'My name is <first name> <last name>' using
+    the following methods:
     say_my_name.
 """
 
