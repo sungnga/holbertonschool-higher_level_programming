@@ -27,6 +27,17 @@ Test with two floats:
 >>> add_integer(23.7, 2.33)
 25
 
+>>> add_integer(0)
+98
+
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer("Betty", "Holberton")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
 Test with a string as second argument:
 >>> add_integer(4, 'School')
 Traceback (most recent call last):
@@ -45,4 +56,4 @@ TypeError: a must be an integer
 Test with infinite number:
 >>> add_integer(float('inf'))
 Traceback (most recent call last):
-ValueError: invalid literal for int() with base 10: 'inf'
+OverflowError: cannot convert float infinity to integer
