@@ -54,13 +54,12 @@ class Rectangle:
 
     def __str__(self):
         """Returns the rectangle with the character #."""
-        str = ""
-        if self.__width != 0 or self.__height != 0:
-            for row in range(self.__height):
-                for col in range(self.__width):
-                    str += '#'
-                if row < self.__height - 1:
-                    str += '\n'
-            return str
-        else:
-            return ""
+        strend = ""
+        if self.__width == 0 or self.__height == 0:
+            return strend
+        for row in range(self.__height):
+            for col in range(self.__width):
+                strend += '#'
+            if row < self.__height - 1:
+                strend += '\n'
+        return strend
