@@ -22,7 +22,7 @@ class Rectangle:
     def height(self, value):
         """To set height."""
         if type(value) != int:
-            raise TypeErroe('height must be an integer')
+            raise TypeError('height must be an integer')
         if value < 0:
             raise ValueError('height must be >= 0')
         self.__height = value
