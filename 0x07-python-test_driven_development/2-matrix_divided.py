@@ -15,10 +15,10 @@ def matrix_divided(matrix, div):
     result = 0
     new_matrix = []
     err_msg = "matrix must be a matrix (list of lists) of integers/floats"
-    matrix_len = matrix[0]
+    matrix_len = len(matrix[0])
     for row in matrix:
         new_list = []
-        if matrix_len != row:
+        if matrix_len != len(row):
             raise TypeError('Each row of the matrix must have the same size')
         for elem in row:
             if type(elem) != int and type(elem) != float:
