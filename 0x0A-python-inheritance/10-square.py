@@ -27,8 +27,8 @@ class Rectangle(BaseGeometry):
         """Initialize the rectangle class."""
         self.__width = width
         self.__height = height
-        BaseGeometry.integer_validator(self, "width", width)
-        BaseGeometry.integer_validator(self, "height", height)
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
 
     def area(self):
         """A method that returns the rectangle area."""
@@ -45,9 +45,9 @@ class Square(Rectangle):
     def __init__(self, size):
         """Initialize the square class."""
         self.__size = size
-        BaseGeometry.integer_validator(self, "size", size)
+        self.integer_validator("size", size)
         super().__init__(size, size)
 
     def area(self):
         """Returns the area of a rectangle."""
-        return self.__size ** 2
+        return (self.__size ** 2)
