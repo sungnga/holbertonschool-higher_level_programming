@@ -38,6 +38,7 @@ class Rectangle(BaseGeometry):
         """A method that creates a string object from a given object"""
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
 
+
 class Square(Rectangle):
     """A square class."""
 
@@ -49,4 +50,4 @@ class Square(Rectangle):
 
     def area(self):
         """Returns the area of a rectangle."""
-        return self.__size **2
+        return self.__size ** 2
