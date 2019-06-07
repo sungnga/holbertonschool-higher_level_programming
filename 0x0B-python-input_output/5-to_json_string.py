@@ -2,6 +2,7 @@
 
 """This is a module for to_json_string."""
 
+
 import json
 
 def to_json_string(my_obj):
