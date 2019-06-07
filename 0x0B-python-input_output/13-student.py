@@ -27,4 +27,4 @@ class Student:
         """Replaces all attributes of the Student instance."""
         for i in self.__dict__:
             if i in json:
-                self.__dict_[i] = json[i]
+                self.__dict__[i] = json[i]
