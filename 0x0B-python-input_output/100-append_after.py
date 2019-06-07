@@ -10,3 +10,6 @@ def append_after(filename="", search_string="", new_string="")
         for i in f:
             if search_string == i:
                 f.append(new_string)
+
+    with open(filename, 'w') as f:
+        f.write(new_string)
