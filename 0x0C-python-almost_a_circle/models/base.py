@@ -66,7 +66,7 @@ class Base:
         my_list = []
 
         filename = cls.__name__ + ".json"
-        if path.isfile(filename) is not None:
+        if path.exists(filename):
             with open(filename, encoding='utf-8') as f:
                 list_dict = cls.from_json_string(f.read())
             for dict in list_dict:
