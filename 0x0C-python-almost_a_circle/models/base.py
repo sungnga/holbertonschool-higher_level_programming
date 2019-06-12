@@ -5,6 +5,7 @@
 import json
 from os import path
 
+
 class Base:
     """A base class"""
 
