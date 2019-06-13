@@ -68,21 +68,6 @@ class TestBaseClass(unittest.TestCase):
         b2 = Base(22)
         self.assertEqual(b2.id, 22)
 
-    def test_7_id_dict(self):
-        '''Test for dictionary id'''
-        b1 = Base({"age": 5})
-        self.assertEqual(b1.id, {"age": 5})
-
-    def test_8_id_list(self):
-        '''Test for list id'''
-        b1 = Base([9, 8, 7])
-        self.assertEqual(b1.id, [9, 8, 7])
-
-    def test_9_id_type(self):
-        '''Test for type of id'''
-        b1 = Base()
-        self.assertEqual(type(b1), Base)
-
 
 if __name__ == '__main__':
     unittest.main()
