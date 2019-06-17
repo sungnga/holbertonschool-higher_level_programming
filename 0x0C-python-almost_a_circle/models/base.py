@@ -99,3 +99,38 @@ class Base:
             for dict in list_dict:
                 my_list.append(cls.create(**dict))
         return my_list
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        '''Opens a window and draws all the Rectangles and Squares'''
+
+        import turtle
+        import time
+        from random import randrange
+
+        t = turtle.Turtle()
+        position = t.position()
+        t.color("orange")
+        turtle.Screen().colormode(255)
+        t.shape("turtle")
+        t.pensize(2)
+        t.fillcolor("purple")
+
+        for o in (list_rectangles + list_squares):
+            t.setposition(0, 0)
+            t.color((randrange(255), randrange(255), randrange(255)))
+            Base.drawRect(t, o)
+            time.sleep(2)
+        time.sleep(10)
+
+    @staticmethod
+    def drawRect(t, rect):
+        t.setposition(rect.x, rect.y)
+        t.forward(rect.width)
+        t.left(90)
+        t.forward(rect.height)
+        t.left(90)
+        t.forward(rect.width)
+        t.left(90)
+        t.forward(rect.height)
+        t.left(90)
