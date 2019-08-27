@@ -8,5 +8,5 @@ import sys
 
 if __name__ == "__main__":
     payload = {'email': sys.argv[2]}
-    result = requests.post(sys.argv[1], params=payload)
+    result = requests.post(sys.argv[1], data=payload)
     print(result.text)
