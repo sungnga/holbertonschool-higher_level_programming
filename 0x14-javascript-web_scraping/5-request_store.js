@@ -12,7 +12,7 @@ request({ url: url, json: true }, (err, res) => {
     console.log(err);
   } else {
     // const content = res.body;
-    fs.writeFile(filepath, res.body, 'utf-8', (err) => {
+    fs.writeFile(filepath, res.body, 'utf-8', (err, data) => {
       if (err) {
         console.log(err);
       }
