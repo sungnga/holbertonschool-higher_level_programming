@@ -1,5 +1,6 @@
 #!/usr/bin/node
-// Write a class Rectangle that defines a rectangle
+// Write a class Rectangle that defines a rectangle and creates an instance
+// method called print()
 
 class Rectangle {
   constructor (w, h) {
