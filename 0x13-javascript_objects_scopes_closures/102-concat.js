@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // Write a script that concats 2 files
 
-const fs = require(fs);
+const fs = require('fs');
 
 const a = process.argv[2];
 const b = process.argv[3];
