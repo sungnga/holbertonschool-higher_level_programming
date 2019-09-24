@@ -12,7 +12,7 @@ request({ url: url, json: true }, (err, res) => {
     let count = 0;
     for (let f = 0; f < films.length; f++) {
       for (let c = 0; c < films[f].characters.length; c++) {
-        if (films[f].characters[c] === 'https://swapi.co/api/people/18/') {
+        if (films[f].characters[c].includes('/18/')) {
           count++;
         }
       }
