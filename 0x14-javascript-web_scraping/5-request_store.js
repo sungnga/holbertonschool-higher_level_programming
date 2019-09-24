@@ -8,13 +8,13 @@ const url = process.argv[2];
 const filepath = process.argv[3];
 
 request({ url: url, json: true }, 'utf-8', (err, res) => {
+  const content = res.body;
   if (err) {
     console.log(err);
   } else {
-    const content = res.body;
     fs.writeFile(filepath, content, 'utf-8', (err) => {
       if (err) {
-        console.error(err);
+        console.log(err);
       }
     });
   }
