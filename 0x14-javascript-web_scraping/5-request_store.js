@@ -5,16 +5,16 @@ const request = require('request');
 const fs = require('fs');
 
 const url = process.argv[2];
-// const filepath = process.argv[3];
+const filepath = process.argv[3];
 
-request({ url: url, json: true }, (err, res) => {
-  const content = res.body;
+request(url, (err, res, body) => {
   if (err) {
     console.log(err);
+  } else {
+    fs.writeFile(filepath, body, 'utf-8', (err) => {
+      if (err) {
+        console.log(err);
+      }
+    });
   }
-  fs.writeFile(process.argv[3], content, 'utf-8', (err, data) => {
-    if (err) {
-      console.log(err);
-    }
-  });
 });
