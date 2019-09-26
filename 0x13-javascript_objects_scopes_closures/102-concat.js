@@ -3,10 +3,6 @@
 
 const fs = require('fs');
 
-const a = process.argv[2];
-const b = process.argv[3];
-const c = process.argv[4];
-
-const fileA = fs.readFileSync(a);
-const fileB = fs.readFileSync(b);
-const fileC = fileA + fileB;
+const fileA = fs.readFileSync(`./${process.argv[2]}`);
+const fileB = fs.readFileSync(`./${process.argv[3]}`);
+fs.appendFileSync(`./${process.argv[4]}`, fileA + fileB, 'utf-8');
