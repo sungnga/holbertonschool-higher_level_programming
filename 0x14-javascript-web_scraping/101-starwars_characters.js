@@ -4,20 +4,30 @@
 const request = require('request');
 const url = 'http://swapi.co/api/films/' + process.argv[2];
 
-let charNames = {};
+let filmChars = [];
+const charNames = {};
 request({ url: url, json: true }, (err, res) => {
   if (err) {
     console.error(err);
   } else {
-    const filmChars = res.body.characters;
-    for (let i = 0; i < filmChars.length; i++) {
-      request(filmChars[i], { json: true }, (err, res) => {
+    filmChars = res.body.characters;
+    for (const index of filmChars) {
+      request(index, { json: true }, (err, res) => {
         if (err) {
           console.log(err);
         }
-        charNames = res.body;
-        console.log(charNames.name);
+        getName(index, res.body.name);
       });
     }
   }
 });
+
+// function that prints the name of each characters
+function getName (url, name) {
+  charNames[url] = name;
+  if (Object.entries(charNames).length === filmChars.length) {
+    for (const idx of filmChars) {
+      console.log(charNames[idx]);
+    }
+  }
+}
