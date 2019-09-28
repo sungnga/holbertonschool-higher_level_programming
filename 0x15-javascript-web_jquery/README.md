@@ -111,7 +111,7 @@ guillaume@ubuntu:~/0x15$
 ```
 
 ### [3. Add `.red` class](./3-script.js)
-Write a Javascript script that adds the class `red` to the HTML tag `HEADER`` to red (`#FF0000`) when the user clicks on the tag `DIV#red_header`:
+Write a Javascript script that adds the class `red` to the HTML tag `HEADER` to red (`#FF0000`) when the user clicks on the tag `DIV#red_header`:
 * You can’t use `document.querySelector` to select the HTML tag
 * You must use the jQuery API
 Please test with this HTML file in your browser:
@@ -338,7 +338,7 @@ guillaume@ubuntu:~/0x15$
 Write a Javascript script that updates the text color of the HTML tag `HEADER` to red (`#FF0000`):
 * You must use `document.querySelector` to select the HTML tag
 * You can’t use the jQuery API
-* Note: Your script must be imported from the ``HEAD` tag, not at the end of the HTML
+* Note: Your script must be imported from the `HEAD` tag, not at the end of the HTML
 Please test with this HTML file in your browser:
 ```
 guillaume@ubuntu:~/0x15$ cat 100-main.html 
