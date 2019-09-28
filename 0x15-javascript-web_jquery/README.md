@@ -34,8 +34,8 @@
 
 ### [0. No jQuery](./0-script.js)
 Write a Javascript script that updates the text color of the HTML tag `HEADER` to red (`#FF0000`):
-  - You must use `document.querySelector` to select the HTML tag
-  - You can’t use the jQuery API
+  * You must use `document.querySelector` to select the HTML tag
+  * You can’t use the jQuery API
 Please test with this HTML file in your browser:
 ```
 guillaume@ubuntu:~/0x15$ cat 0-main.html 
