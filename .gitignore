@@ -6,3 +6,4 @@ main_delete.py
 file.json
 *.pyc
 *.deb
+test_get_count.py
